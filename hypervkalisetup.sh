@@ -1,4 +1,5 @@
 #!/bin/bash
+# Forked from https://github.com/blacklanternsecurity/kali-setup-script/blob/master/kali-setup-script.sh
 
 usage()
 {
