@@ -616,15 +616,11 @@ fi
 
 
     printf '\n============================================================\n'
-    printf '[+] Installing Sublime Text\n'
+    printf '[+] Updating WPScan
     printf '============================================================\n\n'
-    wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
-    apt -y install apt-transport-https
-    echo "deb https://download.sublimetext.com/ apt/stable/" > /etc/apt/sources.list.d/sublime-text.list
-    apt -y update
-    apt -y install sublime-text
+    wpscan --update
 
-	printf '\n============================================================\n'
+    printf '\n============================================================\n'
     printf '[+] Get Useful red team scripts'
     printf '============================================================\n\n'
 	# winpeas
